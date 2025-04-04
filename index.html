@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Cotizador de Criptomonedas</title>
+    <script src="index.js" ></script> 
+</head>
+<body>
+    <div id="container">
+        
+        <form id="coin-form">
+            <div class="coin-input-container">
+                <label for="coin">ELIGE TU MONEDA</label>
+                <select class="coin-input" id="coin">
+                    <option value="USD">Dólar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="ARS">Pesos Argentinos</option>
+                    <option value="VES">Bolívares</option>
+                    <option value="">Selecciona una moneda</option>
+                </select>
+            </div>
+            <div class="coin-input-container">
+                <label for="crypto">ELIGE TU CRIPTOMONEDA</label>
+                <select class="coin-input" id="crypto">
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="AXS">AXS</option>
+                    <option value="BNB">Binance</option>
+                    <option value="">Selecciona una criptomoneda</option>
+                </select>
+            </div>
+            <div class="coin-input-container">
+                <label for="amount">CANTIDAD</label>
+                <input type="text" class="coin-input" id="amount" placeholder="Monto">
+            </div>
+            <button type="submit" class="btn">Cotizar</button>
+            </form>
+            <div id="coin-info">
+                <p class="info">El precio es: <span class="price">1480$</span></p>
+                <p class="info">El precio mas alto: <span class="price">1480$</span></p>
+                <p class="info">El precio mas bajo: <span class="price">1480$</span></p>
+                <p class="info">Variacion 24H: <span class="price">4.5%</span></p>
+                <p class="info">Puede comprar: <span class="price">1.5481 ETH</span></p>
+            </div>
+    </div>
+</body>
+</html>

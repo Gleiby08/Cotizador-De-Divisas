@@ -1,0 +1,89 @@
+
+*, 
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: url(https://media.istockphoto.com/id/2108172267/photo/technology-background-image-concept-graph-business-finance-analysis-marketing-and-profit.jpg?s=612x612&w=0&k=20&c=qN5OJvXoS_Tl6Cahxd9xyxNDOa7wD1lmow-z28RPWwA=);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+img {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 50px; /* Espaciado interno */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.coin-input-container {
+    margin: 10px 0; /* Espaciado entre los contenedores de entrada */
+    width: 100%; /* Ancho completo */
+}
+
+label {
+    font-weight: bold; /* Negrita para las etiquetas */
+    margin-bottom: 5px; /* Espaciado inferior */
+    display: block; /* Mostrar en bloque */
+}
+
+.coin-input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.btn {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Color de fondo en hover */
+}
+ 
+
+
+#coin-info {
+    margin-top: 20px; /* Espaciado superior */
+    text-align: center; /* Centrar texto */
+}
+
+.info {
+    margin: 5px 0; /* Espaciado vertical entre párrafos */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+.price {
+    font-weight: bold; /* Negrita para los precios */
+}
+
