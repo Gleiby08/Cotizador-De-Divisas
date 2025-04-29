@@ -6,9 +6,7 @@ const coinInfo = document.querySelector('#coin-info');
 
     form.addEventListener('submit', async e => {
     e.preventDefault();
-    const coinSelected = [...coin.children].find(option => option.selected).value;
-    const cryptoSelected = [...crypto.children].find(option => option.selected).value;
-    const amountValue = amount.value;
+    
     try {
         const response = await (await fetch(`https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptoSelected}&tsyms=${coinSelected}`)).json();
         const price = response.DISPLAY[cryptoSelected][coinSelected].PRICE;
